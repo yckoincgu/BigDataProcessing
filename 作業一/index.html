@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>2023 Programming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="height=device-height; width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/home.css" />
+        <script src="jsHomePage.js"></script>
+    </head>
+    <body onload="getHomePageMetrix(); " onresize="getHomePageMetrix(); ">
+    <div id="banner">
+        <div id="leftBanner"><img src="image/chu.jpg" alt="xxx"></div>
+        <div id="rightBanner" style="background-image:url('image/me2.jpg'); background-size: auto 100%;">2023 Java and C Programming</div>
+    </div>
+
+    <div id="homeContent" >
+        <div id="leftAreaFunction">
+
+            <div id="beneathImage">
+                    <a class='Operation_link'  href="CSVapServlet?actionID=B_downloadList&fileName=Tools.csv" target="iFrameDisplay_L1">
+                        <button style="color:blue; font-size: 16px;">Tools</button>
+                    </a>              
+                    <a class='Operation_link'  href="CSVapServlet?actionID=B_downloadList&fileName=CMenu.csv" target="iFrameDisplay_L1">
+                        <button style="color:blue; font-size: 16px;">C </button>
+                    </a>
+                    <!--                     <a href="CSVapServlet?actionID=getActionMenuHtml&fileName=ActionMenu.csv" target="iFrameDisplay_L1">
+                        <button style="color:blue; font-family: 標楷體;">資訊系統</button>
+                    </a> -->
+                    <a class='Operation_link' href="CSVapServlet?actionID=B_downloadList&fileName=JavaMenu.csv" target="iFrameDisplay_L1">
+                        <button style="color:blue; font-size: 16px;">Java </button>
+                    </a>                       
+            </div>            
+                
+                    
+            <div id="iFrameDisplay_L1_div">
+                <iframe width="0" 
+                        height="0" 
+                        src="" 
+                        name="iFrameDisplay_L1" 
+                        id="iFrameDisplay_L1"
+                        ></iframe>
+            </div>    
+   
+            
+
+            
+        </div>
+        <div id="rightAreaDisplay" >
+            <iframe width="0" height="0" src="" name="iFrameDisplay_name" id="iFrameDisplay_id"></iframe>
+        </div>
+    </div>
+    </body>
+</html>
